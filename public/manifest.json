@@ -11,12 +11,7 @@
     "192": "/icons/icon192.png"
   },
   "permissions": [],
-  "web_accessible_resources": [
-    {
-      "resources": ["index.html"],
-      "matches": ["<all_urls>"]
-    }
-  ],
+  "web_accessible_resources": ["index.html"],
   "content_scripts": [
     {
       "matches": ["https://*/*", "http://*/*"],
