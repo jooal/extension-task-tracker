@@ -1,19 +1,19 @@
-import styles from '../../styles/Pages.module.css';
+import styles from "../../styles/Pages.module.css";
+import { Card } from "../Index/card";
 
-export default function New({ navigateToPage}) {
-    return (
-        <div className={styles.container}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>NEXT-CHROME-STARTER</h1>
-          <p className={styles.description}>
-            This is an example of a Browser Extension built with NEXT.JS.
-            Please refer to the GitHub repo for running instructions and
-            documentation
-          </p>
-          <h1 className={styles.code}>New Page ./components/New/index.js</h1>
-          <p>{"[ - This is New page content - ]"}</p>
-          <p onClick={() => navigateToPage('index')}>{"< Go Back"}</p>
-        </main>
-      </div>
-    );
-  }
+export default function New({ navigateToPage }) {
+  return (
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <h1 className={styles.title}>NICE!</h1>
+        {/* <p className={styles.description}>
+          You're already on your way to being more productive. Let's add some
+          subtasks.
+        </p> */}
+        <p>Can this be broken down into subtasks?</p>
+        <Card />
+        <p onClick={() => navigateToPage("index")}>{"< Go Back"}</p>
+      </main>
+    </div>
+  );
+}

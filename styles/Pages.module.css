@@ -1,36 +1,242 @@
 .container {
   width: 400px;
   height: 485px;
-  background: linear-gradient(153deg, rgb(116, 56, 216), rgb(18, 150, 170) 74%);
+  background: linear-gradient(153deg, #db93d6, rgb(18, 150, 170) 74%);
   padding: 5px;
   color: white;
 }
 
+.open-modal-btn {
+  padding: 10px 20px;
+  background-color: #ffa726;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.open-modal-btn:hover {
+  background-color: #fb8c00;
+}
+.button {
+  padding: 12px;
+  border: 1px solid rgb(205, 199, 199);
+  border-radius: 16px;
+}
+
+.nav {
+  margin-block-start: 12px;
+}
+
+.todo {
+  width: 360px;
+  display: grid;
+  margin-block: 0px;
+  margin-inline: 0px;
+  margin-block-start: 12px;
+}
+
+.edit {
+  border: none;
+  background: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.card {
+  color: rgb(87, 85, 85);
+
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 2px;
+  background-color: white;
+  width: -webkit-fill-available;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  text-align: center;
+  margin-right: 16px;
+}
+
+.month {
+  color: gray;
+}
+
+.day {
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.progressSection {
+  display: flex;
+  align-items: center;
+}
+
+.checkedtitle {
+  /* font-weight: 400; */
+  margin-right: 8px;
+  text-decoration: line-through;
+}
+
+.trash {
+  background: none;
+  border: none;
+}
+
+.title {
+  margin-right: 8px;
+}
+.todaytitle {
+  margin-right: 8px;
+  color: red;
+}
+.delete {
+  margin-block: 8px;
+}
+
+.dot {
+  font-size: 18px;
+  color: blue;
+  margin-right: 8px;
+}
+
+.subtitle {
+  color: gray;
+  font-size: 14px;
+}
+
+.progress {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+.progresscircle {
+  transform: rotate(-90deg);
+  width: 100%;
+  height: 100%;
+}
+
+.circlebg {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+.progresstext {
+  position: absolute;
+  font-size: 14px;
+  color: blue;
+}
+
 .main {
   width: 390px;
-  height: 475px;
+  /* height: 475px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-block-start: 24px;
 }
 
-.title {
+/* .title {
   font-size: x-large;
-}
+} */
 
 .description {
-  height: 100px;
+  /* height: 100px; */
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 40px;
+  margin-inline: 20px;
 }
 
 .code {
   background: #fafafa;
   color: grey;
   border-radius: 5px;
+  width: inherit;
   padding: 20px;
-  font: small Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  font: small Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+/*subtasks*/
+.subtasks {
+  margin-top: 16px;
+}
+
+.subtask {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.subtask .checkbox {
+  margin-right: 8px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.addSubtask {
+  /* margin-top: 8px; */
+  padding: 4px 8px;
+  background-color: rgb(48, 48, 97);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  margin: 12px auto;
+}
+
+.subtaskInput {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(147, 147, 150);
+  padding: 4px;
+  width: -webkit-fill-available;
 }
